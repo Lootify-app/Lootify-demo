@@ -1,17 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lootify - הגרלות חינמיות</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lootify – כל ההגרלות בחינם</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Heebo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      direction: rtl;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 50px 20px 30px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0 0 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .logo span {
+      color: #ffd700;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    form {
+      margin: 30px auto;
+      max-width: 400px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input[type=email] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button {
+      padding: 12px 24px;
+      background: #4e54c8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #3b40a4;
+    }
+    .how-it-works {
+      max-width: 600px;
+      margin: 40px auto 0;
+      font-size: 1em;
+      color: #555;
+      line-height: 1.6;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #efefef;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
 </head>
-<body style="direction: rtl; font-family: sans-serif; text-align: center; padding: 40px;">
-  <h1>ברוכים הבאים ל-Lootify!</h1>
-  <p>כל ההגרלות החינמיות במקום אחד. מעודכן, אמין, ומסונן לפי מה שמעניין אותך.</p>
-  <form action="https://formspree.io/f/mdkgvnng" method="POST">
-    <label for="email">האימייל שלך:</label><br>
-    <input type="email" name="email" id="email" required style="padding: 10px; margin: 10px; width: 250px;" /><br>
-    <button type="submit" style="padding: 10px 20px;">הרשמה</button>
-  </form>
+<body>
+  <header>
+    <div class="logo"><span>⭐</span> Lootify</div>
+    <h1>כל ההגרלות. במקום אחד. בחינם.</h1>
+    <p>רק מה שמעניין אותך – לפי תחום ומיקום.</p>
+  </header>
+  <main>
+    <form action="https://formspree.io/f/mdkgvnng" method="POST">
+      <label for="email">הכנס את האימייל שלך כדי לקבל גישה להגרלות נבחרות:</label><br>
+      <input type="email" name="email" id="email" required placeholder="example@email.com" />
+      <button type="submit">הרשמה חינמית</button>
+    </form>
+    <div class="how-it-works">
+      <h2>איך זה עובד?</h2>
+      <p>
+        Lootify אוספת עבורך באופן יומיומי עשרות הגרלות חינמיות מהאינטרנט ומציגה רק את אלו שבאמת שוות.
+        כל ההגרלות ממויינות לפי קטגוריות (נופש, טכנולוגיה, אופנה ועוד) ולפי המיקום שלך.
+      </p>
+      <p>
+        אנחנו לא מבקשים תשלום ולא מוכרים מוצרים. השירות מבוסס 100% על גישה חינמית ומקצועית.
+      </p>
+    </div>
+  </main>
+  <footer>
+    © 2025 Lootify. כל הזכויות שמורות.
+  </footer>
 </body>
 </html>
